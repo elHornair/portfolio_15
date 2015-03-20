@@ -95,21 +95,77 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*
+ * Colors
+ * -----------------
+ * light blue: #d3eeff
+ * dark blue: #449fdb
+ */
 
+html {
+    height: 100%;
+    border-left: 10px solid #449fdb;
+}
 
+body {
+    background-color: #f5f5f5;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
 
+.card {
+    max-width: 300px;
+    margin: 100px auto 0;
+    padding: 20px 30px;
+    border: 2px solid #eee;
+    border-radius: 8px;
+    background-color: #fff;
+    transform: translateZ(0) rotate(3deg);
+    transition: all 0.4s ease;
+    backface-visibility: hidden;
+}
 
+.card:hover {
+    transform: rotate(-2deg);
+}
 
+.card h1 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 2.4rem;
+}
 
+.card h2 {
+    margin: -0.2rem 0 0;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
 
+.card ul {
+    display: block;
+    margin: 16px 0 0;
+    padding: 0;
+    list-style: none;
+}
 
+.card ul li {
+    display: block;
+    margin-top: 4px;
+}
 
+.card ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
 
+.card ul li a:before {
+    padding-right: 10px;
+}
 
-
-
-
-
+.card ul li a:hover {
+    color: #449fdb;
+}
 
 /* ==========================================================================
    Helper classes
